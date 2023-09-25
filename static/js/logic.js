@@ -1,5 +1,5 @@
 // Initialize the map
-var map = L.map('map').setView([37.0902, -95.7129], 3); // United States view with zoom level 4
+var map = L.map('map').setView([53, -140.0], 4); // United States view with zoom level 4
 
 // Add a tile layer from OpenStreetMap or any other tile provider
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -7,7 +7,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Fetch earthquake data from the USGS API
-fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson')
+fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson')
     .then(response => response.json())
     .then(data => {
         // Loop through the earthquake data and add markers to the map
