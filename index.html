@@ -17,9 +17,19 @@
 </head>
 
 <body>
-
   <!-- The div that holds our map -->
+
+<div id="map-container">
   <div id="map"></div>
+  <div id="legend">
+    <h4>Quake Depth</h4>
+    <div class="legend-item" style="background-color: #FFD700;"></div>
+    <div class="legend-item" style="background-color: #FFA500;"></div>
+    <div class="legend-item" style="background-color: #FF6347;"></div>
+    <div class="legend-item" style="background-color: #8B0000;"></div>
+    <div class="legend-item" style="background-color: #800000;"></div>
+  </div>  
+</div>
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -29,6 +39,8 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- Our JavaScript -->
   <script type="text/javascript" src="static/js/logic.js"></script>
+
+
 </body>
 
 </html>
